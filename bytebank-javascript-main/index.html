@@ -27,7 +27,7 @@
 
   <main class="dados">
     <header class="cabecalho">
-      <h2>Olá, Moni! Estes são os detalhes da sua cotação:</h2>
+      <h2>Olá, Bilu! Estes são os detalhes</h2>
     </header>
 
     <article class="dadosDolar">
@@ -36,6 +36,7 @@
           <span class="grafico__ilustracao-dolar"></span>
           <h2>Variação da moeda desde o login</h2>
         </div>
+        <canvas id="graficoDolar"></canvas>
 
       </div>
 
@@ -46,10 +47,29 @@
       </div>
     </article>
 
+    <article class="dadosDolar">
+      <div class="grafico">
+        <div class="grafico__titulo">
+          <span class="grafico__ilustracao-iene"></span>
+          <h2>Variação da moeda desde o login</h2>
+        </div>
+        <canvas id="graficoIene"></canvas>
+
+      </div>
+
+      <div class="investimentos">
+        <h2>Valores da moeda</h2>
+        <ul class="investimentos__lista" id="iene" data-lista>
+        </ul>
+      </div>
+    </article>
+
     <footer class="rodape">
-      <p>Dashboard - Desenvolvido por Alura</p>
+      <p>Dashboard - Desenvolvido por Mtzin</p>
     </footer>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script/script.js" type="module"></script>
 </body>
 
 </html>
